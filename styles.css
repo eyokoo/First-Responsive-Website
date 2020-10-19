@@ -1,3 +1,6 @@
+body{
+  background-color:  #010D00;
+}
 header{
   background-color:#798C7C;
   display:flex;
@@ -13,7 +16,6 @@ h1{
 }
 
 section{
-  background-color: #010D00;
   height: 100%;
 }
 .main{
@@ -21,20 +23,9 @@ section{
   font-family: 'Montserrat', sans-serif; 
   padding-top:80px; 
   display:flex;
-  justify-content: space-evenly;
-  grid-template-columns: 1fr 1fr 1fr;
-}
+  justify-content: center;
 
-p{
-  display:block;
-  font-size: small;
-  width: 280px;
-  padding-bottom: 75px;
-  padding-top: 10px;
-}
-
-.title-1{
-  margin-left:60px;
+  /* grid-template-columns: 1fr 1fr 1fr; */
 }
 
 .main h2{
@@ -47,11 +38,26 @@ p{
   margin-right: 50px;
 }
 
+
+p{
+  display:block;
+  font-size: small;
+  width: 280px;
+  padding-bottom: 75px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.title-1{
+  margin-left:60px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .title-2{
   margin-left:50px;
   margin-right:50px;
 }
-
 
 .title-3{
   margin-right:50px;
@@ -69,3 +75,9 @@ p{
   border-color: #F29B88;
 }
 
+@media (max-width: 1000px){
+  .main{
+    display:flex;
+    flex-direction:column;
+  }
+}
