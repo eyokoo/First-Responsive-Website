@@ -29,8 +29,7 @@ section{
 }
 
 .main h2{
-  border-top-style: solid;
-  padding-top: 25px;
+  border-top: solid 25px;
   border-width: 25px;
   justify-content: space-evenly;
   text-align: center;
@@ -49,9 +48,7 @@ p{
 }
 
 .title-1{
-  margin-left:60px;
-  display:flex;
-  justify-content: center;
+  margin-left:50px;
   flex-direction: column;
 }
 .title-2{
@@ -75,9 +72,14 @@ p{
   border-color: #F29B88;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 960px){
   .main{
     display:flex;
     flex-direction:column;
+    justify-content: center;
+    align-items: center;
   }
+    
+  }
+
 }
